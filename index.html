@@ -32,6 +32,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            height: 5%;
         }
 
         .menu {
@@ -44,6 +45,17 @@
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
+        }
+
+        body a:hover {
+            background-color: #070bea;
+            color: #0be059;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: underline;
+            text-underline-position: below;
+            transition-duration: .5s;
+            transform-origin: right;
+            border-radius: 2%;
         }
 
         .logo-container {
@@ -74,29 +86,9 @@
         <a href="#about" onclick="showContent('about')">About</a>
     </div>
 
-    <div class="content" id="home">
-        <h2>Welcome to MADECC-Construction</h2>
-        <p>Your introduction goes here.</p>
-    </div>
-
-    <div class="content" id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Showcase your projects here.</p>
-    </div>
-
-    <div class="content" id="services">
-        <h2>Services</h2>
-        <p>Describe the services you offer.</p>
-    </div>
-
-    <div class="content" id="about">
-        <h2>About</h2>
-        <p>Describe the services you offer.</p>
-    </div>
-
     <div class="content" id="contact">
         <form onsubmit="sendEmail(); reset(); return false;">
-          <h2>Get in touch With Us:</h2>
+            <h2>Get in touch With Us:</h2>
             <input type="text" id="name" placeholder="name:" required>
             <input type="email" id="email" placeholder="email id:" required>
             <input type="text" id="phone" placeholder="phone(+237650320970):" required>
@@ -123,6 +115,228 @@
             <button type="submit">Send</button>
         </form>
     </div>
+    
+
+    <div class="content" id="home">
+        <h2>Welcome to MADECC-Construction</h2>
+        <p>Your introduction goes here.</p>
+    </div>
+
+    <div class="content" id="about">
+        <h2>About:</h2>
+        <p>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>About Us | MADECC-CONSTRUCTION</title>
+                <link rel="stylesheet" href="about.css">
+            </head>
+            <body>
+                <header>
+                    <h1>MADECC-CONSTRUCTION</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#home" onclick="showContent('home')">Home</a></li>
+                            <li><a href="#portfolio" onclick="showContent('portfolio')">Portfolio</a></li>
+                            <li><a href="#contact" onclick="showContent('contact')">Get in touch</a></li>
+                            <li><a href="#services" onclick="showContent('services')">Services</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <section class="about">
+                    <h2>About Us</h2>
+                    <p>MADECC-CONSTRUCTION is a leading construction company dedicated to...</p>
+                </section>
+                <script src="script.js"></script>
+            </body>
+            </html>
+        </p>
+    </div>
+    
+    <div class="content" id="portfolio">
+        <h2>Portfolio</h2>
+        <p>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>MADECC Construction Portfolio</title>
+                <link rel="stylesheet" href="portfolio.css">
+                <style>
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact {
+    margin: 20px;
+}
+
+.floating-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.floating-contact button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+                </style>
+            </head>
+            <body>
+                <header>
+                    <h1>MADECC Construction</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#home" onclick="showContent('home')">Home</a></li>
+                            <li><a href="#contact" onclick="showContent('contact')">Get in touch</a></li>
+                            <li><a href="#about" onclick="showContent('about')">About</a></li>
+                            <li><a href="#services" onclick="showContent('services')">Services</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            
+                <section id="about">
+                    <h2>About Us</h2>
+                    <p>MADECC-CONSTRUCTION is a leading construction company dedicated to...</p>
+                </section>
+            
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="project">
+                        <h3>Project 1</h3>
+                        <p>Description of Project 1.</p>
+                    </div>
+                </section>
+
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:madecccons@gmail.com">Mail Us Here</a></p>
+        <p>Address: 123 Main Street, Cityville, State, 12345</p>
+    </section>
+                    <script src="script.js"></script>
+                    <script>
+                                   document.addEventListener('DOMContentLoaded', function() {
+                                   const contactButton = document.getElementById('contactButton');
+
+                                   contactButton.addEventListener('click', function() {
+                                   window.location.href = 'mailto:your-email@example.com';
+                            });
+                       });
+                    </script>
+            </body>
+            </html>
+        </p>
+    </div>
+
+
+    <div class="content" id="services">
+        <h2>Services</h2>
+        <p>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>MADECC Construction Services</title>
+                <link rel="stylesheet" href="services.css">
+            </head>
+            <body>
+                <header>
+                    <h1>Welcome to MADECC Construction</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#home" onclick="showContent('home')">Home</a></li>
+                            <li><a href="#portfolio" onclick="showContent('portfolio')">Portfolio</a></li>
+                            <li><a href="#contact" onclick="showContent('contact')">Get in touch</a></li>
+                            <li><a href="#about" onclick="showContent('about')">About</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            
+                <section class="services">
+                    <div class="service">
+                        <img src="service (1).jpg" alt="Service 1">
+                        <h2>Service 1</h2>
+                        <p>Description of Service 1.</p>
+                    </div>
+            
+                    <div class="service">
+                        <img src="service (2).jpg" alt="Service 2">
+                        <h2>Service 2</h2>
+                        <p>Description of Service 2.</p>
+                    </div>
+                    <div class="service">
+                        <img src="service (3).jpg" alt="Service 2">
+                        <h2>Service 2</h2>
+                        <p>Description of Service 3.</p>
+                    </div>
+                    <div class="service">
+                        <img src="service (4).jpg" alt="Service 2">
+                        <h2>Service 2</h2>
+                        <p>Description of Service 4.</p>
+                    </div>
+                    <div class="service">
+                        <img src="service (5).jpg" alt="Service 2">
+                        <h2>Service 2</h2>
+                        <p>Description of Service 5.</p>
+                    </div>
+                    <div class="service">
+                        <img src="service (6).jpg" alt="Service 2">
+                        <h2>Service 2</h2>
+                        <p>Description of Service 6.</p>
+                    </div>
+                    <div class="service">
+                        <img src="service (7).jpg" alt="Service 2">
+                        <h2>Service 2</h2>
+                        <p>Description of Service 7.</p>
+                    </div>
+                    <div class="service">
+                        <img src="service (8).jpg" alt="Service 2">
+                        <h2>Service 2</h2>
+                        <p>Description of Service 8.</p>
+                    </div>
+                    <div class="service">
+                        <img src="service (9).jpg" alt="Service 2">
+                        <h2>Service 2</h2>
+                        <p>Description of Service 9.</p>
+                    </div>
+                    <div class="service">
+                        <img src="service (10).jpg" alt="Service 2">
+                        <h2>Service 2</h2>
+                        <p>Description of Service 10.</p>
+                    </div>           
+                </section>
+            
+                <script src="script.js"></script>
+                <script>
+                               document.addEventListener('DOMContentLoaded', function() {
+                               const services = document.querySelectorAll('.service');
+
+                               services.forEach(service => {
+                               const description = service.querySelector('p');
+                               const toggleButton = document.createElement('button');
+                               toggleButton.textContent = 'Toggle Description';
+
+                               toggleButton.addEventListener('click', function() {
+                               description.classList.toggle('show');
+                       });
+
+                            service.appendChild(toggleButton);
+                    });
+                });
+                </script>
+            </body>
+            </html>
+        </p>
+    </div>
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail(){
@@ -141,11 +355,6 @@
        }
     </script>
 
-    <div class="footer">
-        <p>Copyright &copy; 2015-2023 MADECC-Construction<br>
-        All Right Reserved</p>
-    </div>
-
     <script>
         function showContent(contentId) {
             // Hide all content sections
@@ -159,5 +368,8 @@
             selectedContent.style.display = 'block';
         }
     </script>
+    <div class="footer">
+        <p>Copyright &copy; 2015-2023 MADECC-Construction | All Right Reserved</p>
+    </div>
 </body>
 </html>
