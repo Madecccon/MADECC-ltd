@@ -3,18 +3,16 @@ form{
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
-    width: 90%;
-    max-width: 70%;
-    border-radius: 2%;
-    margin-left: 10%;
-    border-radius: 2%;
+    width: 92%;
+    max-width: 100%;
+    border-radius: 15%;
 }
 form h2{
     color: #555;
-    font-weight: 800;
+    font-weight: 1000;
     margin-bottom: 20px;
-    margin-left: 15%;
-    text-shadow: #fff;
+    margin-left: 40%;
+    text-shadow: #fd0505e3;
 }
 form input, form textarea{
     border: 0;
